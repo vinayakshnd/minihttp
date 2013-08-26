@@ -1,0 +1,38 @@
+This is a HTTP Server written in java.
+It supports the following HTTP Headers-
+
+General Headers
+	1.Connection
+	2.Date
+Request Headers
+	1.Host
+	2.If-Modified-Since
+	3.If-Unmodified-Since
+	4.If-Match
+	5.If-None-Match
+	6.Range
+	7.If-Range
+Response Header
+    1.Server
+Entity Headers
+    1.Content-Length
+    2.Content-Range
+    3.Content-Type
+    4.Etag
+    5.Last-Modified
+    
+It also supports following response status codes.
+
+	1.200 OK
+	2.201 Created
+	3.206 Partial Content
+
+	4.400 Bad Request
+	5.404 Not Found
+	6.406 Not Acceptable
+	7.412 Precondition Failed
+	8.416 Requested Range Not Satisfiable
+	
+	9.500 Not implemented
+	10.501 Internal Server Error
+
