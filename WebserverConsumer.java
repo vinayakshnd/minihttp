@@ -12,9 +12,7 @@ public class WebserverConsumer {
 
 		if (server.isCreated()) server.start();
 		
-		/*
-		 * this is comment
-		 */
+		
 		
 	}
 }
