@@ -13,13 +13,13 @@ Request Headers
 	6.Range
 	7.If-Range
 Response Header
-    1.Server
+    	1.Server
 Entity Headers
-    1.Content-Length
-    2.Content-Range
-    3.Content-Type
-    4.Etag
-    5.Last-Modified
+    	1.Content-Length
+    	2.Content-Range
+    	3.Content-Type
+    	4.Etag
+    	5.Last-Modified
     
 It also supports following response status codes.
 
