@@ -18,14 +18,14 @@ import java.util.StringTokenizer;
  *  and to produce response in byte array
  */
 
+
 public class RequestProcessor {
 
-	private static String CRLF;
+	private static String CRLF="\r\n";
 
 	public RequestProcessor() {
 
-		CRLF = "\r\n";
-	}
+			}
 
 	
         public static byte[] processRequest(Request request, String IP_address, String port, String serverRootDir) {
@@ -588,7 +588,7 @@ public class RequestProcessor {
 
 				content_length = last_byte[i] - first_byte[i] + 1;
 
-				responce_header = getResponceHeaders(206) + CRLF 
+				responce_header = getResponceHeaders(206)
 						+ "Content-Type:" + get_contentType(path) + CRLF 
 						+ "Content-Range:bytes "+ first_byte[i] + " " + last_byte[i] + "/" + file_len + CRLF
 						 + "Content-Length:" + content_length + CRLF 
