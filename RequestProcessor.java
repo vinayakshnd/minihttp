@@ -685,7 +685,7 @@ public class RequestProcessor {
 		String back_URI;
 
 		responce1 = new StringBuffer("<html><head><title>Mini HTTP Server</title></head><body>");
-		responce1.append("<p align=center ><h2>Mini HTTP Server</h2></p>");
+		responce1.append("<p ><h1><i>Mini HTTP Server</h1></i></p><hr width=600 align=left></br>");
 		responce1.append("<Table border=0>");
 		responce1.append("<TR>");
 		responce1.append("<TD width='50'> </TD>");
@@ -737,7 +737,7 @@ public class RequestProcessor {
 			}
 			responce1.append("<TR><TD></TD><TD><B><a href=" + server_addr + '/' + back_URI + ">\\..</a></B></TD></TR>");
 		}
-		responce1.append("</TABLE></body></html>");
+		responce1.append("</TABLE></br><hr width=600 align=left><i>Mini HTTP Server at <u><a href="+server_addr+">"+server_addr+"</a></u></i></body></html>");
 
 		responce_header = getResponceHeaders(200) + "Content-type:" + "text/html" + CRLF + "Content-Length:" + ("" + responce1).getBytes().length
 				+ CRLF + CRLF;
